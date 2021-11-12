@@ -1,5 +1,8 @@
 version: 2
-
+python:
+  # Install our python package before building the docs
+  install:
+    - method: pip
 sphinx:
   fail_on_warning: true
 
