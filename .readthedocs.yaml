@@ -1,7 +1,11 @@
 version: 2
-python:
-  # Install our python package before building the docs
+
+build:
+  os: "ubuntu-20.04"
+  tools:
+    python: "3.8"
   install:
+# Install our python package before building the docs
     - method: pip
       path: .
 sphinx:
